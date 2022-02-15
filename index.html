@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.js">
+</head>
+<body>
+
+
+   
+    <h2 class="alert alert-warning" role="alert" style="text-align: center; color: rgb(207, 117, 0); margin-top: 6%;">Currency Converter</h2>
+    <hr>
+    
+   
+
+<div class="currencybody">
+
+    <input type="text" style="padding: 1.5%;border-radius: 23px; text-align: center; font-weight: bold;"  id="input" onclick="first()" oninput="first()">
+
+    <select name="country" style="padding: 2%; border-radius: 23px; text-align: center; margin-top: 2%; font-weight: bold;" id="convert1" onchange="first()" oninput="first()" onclick="first()">
+       
+     
+        <!--Country name: "A"-->
+     
+        <option value="afghan">Afghan Afghani</option>
+        <option value="usdlr">American Dollar</option>
+        <option value="australian">Australian Dollar</option>
+        <option value="azarbaijani">Azarbaijani Manat</option>
+        
+       <!--country name: "B"-->
+       <option value="bahamian">Bahamian Dollar</option>
+       <option value="bahraini">Bahraini Dinar</option>
+       <option value="bajan">Bajan Dollar</option>
+       <option value="bdtk">Bangladeshi Taka</option>
+       <option value="bhutan">Bhutan Currency</option>
+       <option value="brazilian">Brazilian Real</option>
+      
+       <option value="bitcoin">Bitcoin</option> 
+
+       <!--country name with C-->
+
+       <option value="chinese">Chinese Yuan</option>
+
+       <!--country name with D-->
+
+       <option value="egyptian">Egyptian Pound</option>
+       <option value="euro">Euro</option>
+       <option value="rupe">Indian Rupee</option>
+       <option value="japanese">Japanese Yen</option>
+       <option value="malaysian">Malaysian Ringgit</option>
+       <option value="mayanmar">Mayanmar Kyat</option>
+       <option value="pk">Pakistani Rupee</option>
+       <option value="uae">UAE Dirham</option>
+
+
+       
+
+       
+      
+       
+    </select>
+
+    
+    <br>
+
+    <h3 style="font-weight: bold; color: rgb(202, 202, 76); padding: 2%; margin-top: 3%;">Convert to</h3>
+    <!----------------------same thing i will do here so lets get started --------------->
+    <input type="text" style="padding: 1.5%;border-radius: 23px; text-align: center;font-weight: bold;" id="output" onclick="first()" oninput="first()">
+    <select name="country" style="padding: 2%; border-radius: 23px; text-align: center;margin-top: 2%;font-weight: bold;" id="convert2" onchange="first()" oninput="first()" onclick="first()">
+       
+        <!--Country name: "A"-->
+        
+        <option value="afghan">Afghan Afghani</option>
+        <option value="usdlr">American Dollar</option>
+        <option value="australian">Australian Dollar</option>
+        <option value="azarbaijani">Azarbaijani Manat</option>
+        
+       <!--country name: "B"-->
+       <option value="bahamian">Bahamian Dollar</option>
+       <option value="bahraini">Bahraini Dinar</option>
+       <option value="bajan">Bajan Dollar</option>
+       <option value="bdtk">Bangladeshi Taka</option>
+       <option value="bhutan">Bhutan Currency</option>
+       <option value="brazilian">Brazilian Real</option>
+      
+       <option value="bitcoin">Bitcoin</option> 
+
+       <!--country name with C-->
+
+       <option value="chinese">Chinese Yuan</option>
+
+       <!--country name with D-->
+
+       <option value="egyptian">Egyptian Pound</option>
+       <option value="euro">Euro</option>
+       <option value="rupe">Indian Rupee</option>
+       <option value="japanese">Japanese Yen</option>
+       <option value="malaysian">Malaysian Ringgit</option>
+       <option value="mayanmar">Mayanmar Kyat</option>
+       <option value="pk">Pakistani Rupee</option>
+       <option value="uae">UAE Dirham</option>
+
+
+
+    </select>
+
+   
+
+
+</div>
+<br>
+<div class="notice">
+    <p style="padding: 2%; margin-left: 3%; color: bisque;">In Future update, we'll add 100+ country to convert currency. Hope that, it'll help you.</p>
+</div>
+<div class="web">
+    <p style="color: cornsilk; margin-left: 3%;">View Web-version: <a href="https://www.brainboster.com/currency_converter" style="text-decoration: underline; color: chartreuse;">Currency Converter Web App</a></p>
+</div>
+
+
+
+<!--Javascript File For converting-->
+
+<script src="currencyconverter.js"></script>
+<script src="bootstrap.min.js"></script>
+
+<!--Javascripy File for converting-->
+
+
+</body>
+</html>
